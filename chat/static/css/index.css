@@ -1,0 +1,16 @@
+body {
+    background-color: #333;
+}
+
+h1 {
+    font-weight: bolder;
+}
+
+.jumbotron {
+    width: 50vw;
+    background-color: #e5e5e5;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 100px auto;
+}

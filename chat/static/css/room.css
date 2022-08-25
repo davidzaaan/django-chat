@@ -1,0 +1,130 @@
+body {
+    background-color: #333 !important;
+}
+
+.container {
+    max-width: 600px;
+    height: 60vh;
+    margin: 70px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #e5e5e5;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+    border-radius: 20px;
+}
+
+/* scroll bars styling */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: inherit;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* ------------------- */
+
+.chat-room-header {
+    font-size: 3rem;
+    margin: 20px auto;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #e5e5e5;
+}
+
+.chat-room-header h2 {
+    font-weight: lighter;
+}
+
+.chat-room-header a {
+    font-size: 20px;
+}
+
+#chat-log {
+    width: 90%;
+    height: 55%;
+    background-color: inherit;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-shrink: 0;
+    padding: 10px;
+}
+
+#chat-message-input {
+    /* align-self: flex-start; */
+    width: 400px;
+    margin: 11px auto;
+}
+
+.form-group textarea {
+    resize: none;
+}
+
+.message {
+    color: #e5e5e5;
+    min-width: 250px;
+    max-width: 370px;
+    background-color: #333;
+    border-radius: 13px;
+    margin: 10px;
+}
+
+.message h1,
+.its-me h1 {
+    align-self: flex-start;
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 1.7rem;
+}
+
+.message p,
+.its-me p {
+    margin-right: 13px;
+    margin-left: 20px;
+    word-wrap: break-word;
+}
+
+.its-me {
+    color: #e5e5e5;
+    align-self: flex-end;
+    min-width: 250px;
+    max-width: 370px;
+    background-color: #023e8a;
+    border-radius: 13px;
+    margin: 10px;
+}
+
+@media (max-width: 700px) {
+    #chat-log {
+        width: 80% !important;
+        /* height: 55%;
+        background-color: inherit;
+        box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+        overflow-y: scroll;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        flex-shrink: 0;
+        padding: 10px; */
+    }
+}

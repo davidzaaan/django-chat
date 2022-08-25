@@ -1,0 +1,22 @@
+{% extends 'users/base.html' %}
+
+{% block content %}
+    <div class="container">
+        <div class="form-container">
+            <h1>Register</h1>
+            <form action="{% url 'register' %}" method="post" id="register-form">
+            {% csrf_token %}
+            {% for field in form %}
+                <div class="form-floating mb-2">
+                    <input type="{{ field.widget_type }}" class="form-control" id="floatingInput" placeholder="lala" name="{{field.name}}">
+                    <label for="floatingInput">{{field.label}}</label>
+                </div>
+                {% endfor %}
+
+                <input type="submit" class="btn btn-primary text-center" value="Register"/>
+            </form>
+            
+            <p>Already have a user? <a href="{% url 'login' %}">Log In</a></p>
+        </div>
+    </div>
+{% endblock content %}

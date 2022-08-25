@@ -1,0 +1,15 @@
+{% extends 'users/base.html' %}
+{% block content %}
+<div class="container">
+    <h1>Welcome</h1>
+    <form action="{% url 'login' %}" method="post">
+        {% csrf_token %}
+        <p>Type a username to start chatting</p>
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" name="username">
+            <label for="floatingInput">Username</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Join</button>
+    </form>
+</div>
+{% endblock content %}

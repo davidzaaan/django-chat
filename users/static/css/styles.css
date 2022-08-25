@@ -1,0 +1,36 @@
+body {
+    background-color: #333;
+}
+
+h1 {
+    font-weight: lighter;
+}
+
+.container {
+    width: 50vw;
+    /* min-height: 50vh; */
+    padding: 20px;
+    margin-top: 100px;
+    background-color: #e5e5e5;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+    border-radius: 20px;
+}
+
+.container h1 {
+    text-align: center;
+}
+
+p {
+    margin: 20px 10px;
+}
+
+.alert {
+    width: 300px;
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+#close-message {
+    cursor: pointer;
+}
