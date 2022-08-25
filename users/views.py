@@ -1,8 +1,6 @@
 from django.shortcuts import redirect, render
 from django.contrib import messages
-from django.views.decorators.csrf import csrf_protect
 
-@csrf_protect
 def login_user(request):
     if request.method == "POST":
         username = request.POST['username'].lower().strip()
