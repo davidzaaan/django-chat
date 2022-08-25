@@ -152,9 +152,7 @@ CHANNEL_LAYERS = {
     },
 }
 
-CSRF_TRUSTED_ORIGINS = [
-    "https://chat-dm.herokuapp.com/",
-]
+# CSRF_TRUSTED_ORIGINS = []
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
